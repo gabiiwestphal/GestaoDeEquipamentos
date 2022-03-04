@@ -82,7 +82,6 @@ namespace GestaoDeEquipamentos.ConsoleApp
                                 }
                                 else
                                 {
-
                                     Console.Write("\n\n" + (i + 1) + "° Equipamento registrado: ");
                                     Console.Write("\nNome do equipamento: " + nomesDosEquipamentos[i]);
                                     Console.Write("\nNumero de serie: " + numeroDeSerie[i]);
@@ -102,7 +101,6 @@ namespace GestaoDeEquipamentos.ConsoleApp
                         Console.Clear();
                         do
                         {
-
                             if (countEquipamentos != 0)
                             {
                                 Console.WriteLine("Equipamentos resgistrados: ");
@@ -224,7 +222,6 @@ namespace GestaoDeEquipamentos.ConsoleApp
 
                         while (true)
                         {
-
                             Console.Clear();
                             Console.WriteLine("menu de chamados");
                             Console.WriteLine("\n1.Registrar Chamado\n2.Vizualizar Chamados\n3.Editar Chamado\n4.Excluir Chamado\n5.Voltar");
@@ -251,10 +248,8 @@ namespace GestaoDeEquipamentos.ConsoleApp
                                     Console.Clear();
                                     Console.WriteLine("Escolha um dos equipamento: ");
                                     for (int i = 0; i < countEquipamentos; i++)
-                                    {
-                                                                          
-                                            Console.WriteLine("Item " + i + ": " + nomesDosEquipamentos[i]);
-                                        
+                                    {                                                               
+                                            Console.WriteLine("Item " + i + ": " + nomesDosEquipamentos[i]);                                      
                                     }
 
                                     int numeroEscolhido = int.Parse(Console.ReadLine());
@@ -263,7 +258,6 @@ namespace GestaoDeEquipamentos.ConsoleApp
                                     Console.Clear();
                                     Console.WriteLine("Data de Abertura: ");
                                     dataChamados = Convert.ToDateTime(Console.ReadLine());
-
 
                                     Console.WriteLine("Seu Chamado foi registrado com sucesso!\n\n");
 
@@ -299,7 +293,6 @@ namespace GestaoDeEquipamentos.ConsoleApp
                                                 Console.Clear();
                                                 opcaoChamado = "5";
                                             }
-
                                         }
                                     }
                                     else
