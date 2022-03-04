@@ -135,7 +135,6 @@ namespace GestaoDeEquipamentos.ConsoleApp
                                     Console.WriteLine("4. Data da fabricação \n5. Fabricante \n6. voltar para o menu principal\n");
                                     opcaoEditar = Console.ReadLine();
 
-
                                     switch (opcaoEditar)
                                     {
                                         case "1":
@@ -211,7 +210,6 @@ namespace GestaoDeEquipamentos.ConsoleApp
                             // {
                             //   Console.WriteLine(" Equipamento não excluído, está vínculado a um chamado.");
                             // }
-
 
                             nomesDosEquipamentos[i2] = null;
                             numeroDeSerie[i2] = null;
@@ -390,7 +388,6 @@ namespace GestaoDeEquipamentos.ConsoleApp
                                                     break;
                                             }
                                         }
-
                                     }
                                     else
                                     {
@@ -414,9 +411,7 @@ namespace GestaoDeEquipamentos.ConsoleApp
                                         Console.WriteLine("Digite o número do chamado que deseja excluir: ");
                                         int i4 = int.Parse(Console.ReadLine());
             
-
                                         nomesDosChamados[i4] = null;
-
 
                                         Console.ReadLine();
                                         Console.Clear();
@@ -439,13 +434,10 @@ namespace GestaoDeEquipamentos.ConsoleApp
                                     Console.ReadLine();
                                     Console.Clear();
                                     break;
-
                             }
                         }
                         break;
                 }
-
-
 
             } while (opcao != "6");
         }
